@@ -7,7 +7,7 @@ from .modules import Modality
 
 @dataclass
 class D2vModalitiesConfig(FairseqDataclass):
-    audio: D2vAudioConfig = D2vAudioConfig()
+    audio: D2vAudioConfig = field(default_factory=D2vAudioConfig)
 
 
 @dataclass
