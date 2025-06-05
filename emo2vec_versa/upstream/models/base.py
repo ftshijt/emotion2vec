@@ -10,7 +10,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from collections import namedtuple
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from functools import partial
 from omegaconf import MISSING, II
 from typing import Optional, Callable
