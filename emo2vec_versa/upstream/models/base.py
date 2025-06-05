@@ -64,7 +64,7 @@ class D2vModalityConfig:
     num_alibi_heads: int = II("model.num_heads")
     model_depth: int = II("model.depth")
 
-    decoder: Optional[D2vDecoderConfig] = D2vDecoderConfig()
+    decoder: Optional[D2vDecoderConfig] = field(default_factory=D2vDecoderConfig)
 
 
 MaskSeed = namedtuple("MaskSeed", ["seed", "update", "ids"])
