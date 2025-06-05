@@ -19,6 +19,7 @@ classifiers = [
 dependencies = [
     "torch",
     "fairseq",
+    "timm",
 ]
 requires-python = ">=3.9"
 dynamic = ["version"]
